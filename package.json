@@ -10,7 +10,7 @@
     "release": "npm publish --access public"
   },
   "bin": {
-    "mini-claude": "./dist/index.js"
+    "minicc": "./dist/index.js"
   },
   "files": [
     "dist",
