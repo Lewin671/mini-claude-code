@@ -6,9 +6,11 @@ import { CLAUDE_COLOR } from "../constants/colors.js";
 
 export async function getNextPrompt(): Promise<string> {
     const prompt = new Input({
-        message: chalk.hex(CLAUDE_COLOR)(`${figures.pointer} `),
-        name: "query",
+        message: ``,
+        initial: '',
+        prefix: chalk.hex(CLAUDE_COLOR).bold('minicc') + chalk.gray(' >'),
     });
 
-    return await prompt.run();
+    const result = await prompt.run();
+    return result || '';
 }

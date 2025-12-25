@@ -23,12 +23,43 @@ A beautifully crafted Terminal User Interface for interacting with the Anthropic
 └── package.json         # Project metadata and dependencies
 ```
 
-## Getting Started
+## Installation & Usage
 
-1. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+### 1. Global Installation (Recommended)
+
+Install the package globally via npm:
+
+```bash
+npm install -g @lewin671/mini-claude-code
+```
+
+After installation, you can start the application from anywhere using:
+
+```bash
+minicc
+```
+
+### 2. Run without Installation (npx)
+
+If you just want to try it out without installing:
+
+```bash
+npx @lewin671/mini-claude-code
+```
+
+### 3. Local Development
+
+If you'd like to run it from the source code:
+
+1.  **Clone the repository and install dependencies:**
+    ```bash
+    npm install
+    ```
+
+2.  **Run in development mode:**
+    ```bash
+    npm run dev
+    ```
 
 ## Configuration
 
@@ -45,16 +76,11 @@ ANTHROPIC_BASE_URL=https://api.anthropic.com  # Optional
 You can also set the variables directly in your terminal:
 ```bash
 export ANTHROPIC_API_KEY=your_api_key_here
+# Optional
 export ANTHROPIC_BASE_URL=https://api.anthropic.com
 ```
 
-> **Note on Priority:** Shell environment variables take precedence over settings in the `.env` file. This allows you to easily override your configuration for specific sessions.
-
-
-3. **Run the app:**
-   ```bash
-   npm run dev
-   ```
+> **Note on Priority:** Shell environment variables take precedence over settings in the `.env` file.
 
 ## License
 

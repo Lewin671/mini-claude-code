@@ -26,8 +26,11 @@ async function main() {
     const stream = createAgentStream(inputGenerator());
 
     const handleInput = async (sessionId: string = "") => {
-        const prompt = await getNextPrompt();
-        if (prompt.trim() === '/exit') process.exit(0);
+        let prompt = "";
+        while (!prompt.trim()) {
+            prompt = await getNextPrompt();
+            if (prompt.trim() === '/exit') process.exit(0);
+        }
 
         if (resolveNextInput) {
             (resolveNextInput as any)({
