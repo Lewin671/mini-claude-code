@@ -30,11 +30,26 @@ A beautifully crafted Terminal User Interface for interacting with the Anthropic
    npm install
    ```
 
-2. **Configure environment:**
-   Create a `.env` file with your Anthropic API Key:
-   ```env
-   ANTHROPIC_API_KEY=your_key_here
-   ```
+## Configuration
+
+The application requires an Anthropic API key to function. You can provide this in two ways:
+
+### 1. Using a `.env` file
+Create a `.env` file in the project root:
+```env
+ANTHROPIC_API_KEY=your_api_key_here
+ANTHROPIC_BASE_URL=https://api.anthropic.com  # Optional
+```
+
+### 2. Using Shell Environment Variables
+You can also set the variables directly in your terminal:
+```bash
+export ANTHROPIC_API_KEY=your_api_key_here
+export ANTHROPIC_BASE_URL=https://api.anthropic.com
+```
+
+> **Note on Priority:** Shell environment variables take precedence over settings in the `.env` file. This allows you to easily override your configuration for specific sessions.
+
 
 3. **Run the app:**
    ```bash
