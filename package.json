@@ -1,11 +1,21 @@
 {
-  "name": "mini-claude-code",
-  "version": "1.0.0",
+  "name": "@lewin671/mini-claude-code",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "tsx src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "npm publish --access public"
   },
+  "bin": {
+    "mini-claude": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",

@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { type SDKUserMessage } from "@anthropic-ai/claude-agent-sdk";
 import "dotenv/config";
 import chalk from "chalk";
