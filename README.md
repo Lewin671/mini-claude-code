@@ -1,6 +1,6 @@
-# Claude Agent TUI
+# Mini Claude Code
 
-A beautifully crafted Terminal User Interface for interacting with the Anthropic Claude Agent SDK.
+A beautifully crafted Terminal User Interface for interacting with the Anthropic Claude Agent SDK, inspired by Claude Code.
 
 ## Features
 

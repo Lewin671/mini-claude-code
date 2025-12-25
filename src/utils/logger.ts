@@ -11,7 +11,7 @@ export const spinner = ora({
 
 export function logHeader() {
     process.stdout.write('\x1Bc'); // Clear terminal
-    console.log(chalk.hex(CLAUDE_COLOR).bold(`\n ${figures.star} Claude Agent TUI\n`));
+    console.log(chalk.hex(CLAUDE_COLOR).bold(`\n ${figures.star} Mini Claude Code\n`));
     console.log(chalk.gray(` Type '/exit' to quit • Working directory: ${process.cwd()}\n`));
 }
 
