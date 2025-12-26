@@ -69,6 +69,7 @@ The application requires an Anthropic API key to function. You can provide this 
 Create a `.env` file in the project root:
 ```env
 ANTHROPIC_API_KEY=your_api_key_here
+ANTHROPIC_MODEL=claude-3-5-sonnet-20241022  # Optional
 ANTHROPIC_BASE_URL=https://api.anthropic.com  # Optional
 ```
 
@@ -76,6 +77,8 @@ ANTHROPIC_BASE_URL=https://api.anthropic.com  # Optional
 You can also set the variables directly in your terminal:
 ```bash
 export ANTHROPIC_API_KEY=your_api_key_here
+# Optional
+export ANTHROPIC_MODEL=claude-3-5-sonnet-20241022
 # Optional
 export ANTHROPIC_BASE_URL=https://api.anthropic.com
 ```

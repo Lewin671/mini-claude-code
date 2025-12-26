@@ -1,6 +1,6 @@
 {
   "name": "@lewin671/mini-claude-code",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "scripts": {
     "dev": "tsx src/index.ts",
